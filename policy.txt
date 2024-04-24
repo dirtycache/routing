@@ -1,0 +1,19 @@
+16970:1001	Houston, TX
+16970:1009	Lincoln, NE
+16970:1010	Kansas City, MO
+
+16970:410	MIDnet and customer routes
+16970:420	Peer routes
+16970:430	Transit routes
+
+Community	Local-Pref	Description
+(default)	120		MIDnet and customer routes default
+		116		Preferred peer
+		114		Peer
+		112		Peer backup
+		110		Preferred transit
+		108		Transit
+		106		Transit backup
+16970:480	104		Customer backup
+16970:450	102		Customer fallback
+16970:666	N/A		Blackhole
