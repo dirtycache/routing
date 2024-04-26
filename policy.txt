@@ -17,12 +17,12 @@
 
 Community	Local-Pref	Description
 (default)	120		MIDnet and customer routes default
-		118		Customer backup
-		116		Preferred peer
-		114		Peer
-		112		Peer backup
-		110		Preferred transit
-		108		Transit
-		106		Transit backup
-16970:xxx	104		Customer fallback, below peer or transit
+16970:118	118		Customer backup
+16970:116	116		Preferred peer
+16970:114	114		Peer
+16970:112	112		Peer backup
+16970:110	110		Preferred transit
+16970:108	108		Transit
+16970:106	106		Transit backup
+16970:104	104		Customer fallback, below peer or transit
 16970:666	N/A		Blackhole
