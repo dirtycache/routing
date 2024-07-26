@@ -1,7 +1,12 @@
+### TODO:
+### Maybe use https://github.com/bgp/bgpq4
+### Because it supports prefix aggregation
+
 #!/usr/bin/env bash
 DEBUG="0"
 OUTPUT="1"
 MY_PDB_API_FILE=~/.pdb_api.txt
+
 if [ -z $1 ]; then
  echo "Usage: Please specify two arguments for mode and query."
  echo " "
