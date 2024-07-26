@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 DEBUG="0"
 OUTPUT="1"
-
+MY_PDB_API_FILE=~/.pdb_api.txt
 if [ -z $1 ]; then
  echo "Usage: Please specify two arguments for mode and query."
  echo " "
@@ -36,7 +36,7 @@ fi
 
 if [ "$MODE" == "pdb" ]; then
  ASN=$2
- PDB_API="huApe72X.AIOVS3SeahH0MDxz9bJanlY3qSZEyF4o"
+ PDB_API=`cat $MY_PDB_API_FILE`
  AS_SET=$(curl -s -H "Authorization: Api-Key $PDB_API" -H "Content-Type: application/json" -X GET https://www.peeringdb.com/api/as_set/{$ASN})
  if [ -z "$AS_SET" ]; then
   echo "ERROR: null value retrieved for as-set from PeeringDB"
