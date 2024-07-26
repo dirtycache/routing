@@ -78,8 +78,6 @@ if [ "$OUTPUT" == "1" ]; then
         echo "set policy prefix-list $PL4NAME rule $RULENUM le 24"
         RULENUM=$((RULENUM+10))
  done <<< "$PREFIXES"
-
- echo "set policy prefix-list $PL4NAME rule 9999 action deny"
  echo "commit"
  echo "save"
  echo "exit"
